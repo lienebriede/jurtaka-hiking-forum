@@ -2,11 +2,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 
+html,
 body {
+    height: 100%;
+}
+
+body {
+    padding-top: 80px;
     background: url("../images/background_wave.png");
     background-size: cover;
     background-repeat: repeat;
     font-family: "Lato",
         sans-serif;
     color: #3a3b3c;
+}
+
+/* Navbar -----------------------------------------------------------------> */
+
+.navbar {
+    background-color: #374955;
+}
+
+/* Main -------------------------------------------------------------------> */
+
+
+
+/* Footer -----------------------------------------------------------------> */
+
+.footer {
+    background-color: #f9f871;
+}
+
+i {
+    font-size: 150%;
+}
+
+.copy {
+    font-size: 100%;
+}
+
+a {
+    color: inherit;
 }

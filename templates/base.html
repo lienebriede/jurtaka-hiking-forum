@@ -20,16 +20,57 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 
-<body>
+<body class="d-flex flex-column h-100">
+    <!-- Nav bar -->
+    <nav class="navbar navbar-expand-lg fixed-top p-2 px-lg-5" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a href="{% url 'home' %}"><img src="../static/images/jurtaka_logo.png" height="70" width="auto"
+                    class="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nav item</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nav item</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nav item</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
     <main class="flex-grow-1 d-flex flex-column container-lg">
         {% block content %}
         {% endblock %}
     </main>
-
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3">
+        <p class="text-center pt-4">Follow us!
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener"
+                aria-label="visit our Instagram page (opens in a new tab)"><i
+                    class="fa-brands fa-instagram ms-2 text-decoration-none"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener"
+                aria-label="visit our Facebook page (opens in a new tab)"><i class="fa-brands fa-facebook-f
+                    ms-2 text-decoration-none"></i></a>
+        </p>
+        <p class="text-center">
+            <i class="fa-regular fa-copyright copy pb-4"></i> 2024
+        </p>
+    </footer>
     <!-- Bootstrap CSS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <!-- Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/9c41b36590.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
