@@ -13,3 +13,15 @@ class PostList(generic.ListView):
     paginate_by = 5
 
 
+def post_detail(request, slug):
+    """
+    Display an individual post
+    """
+    queryset = Post.objects.filter(status=1)
+    post = get_object_or_404(queryset, slug=slug)
+
+    return render(
+        request,
+        "forum/post_detail.html",
+        {"post": post},
+    )
