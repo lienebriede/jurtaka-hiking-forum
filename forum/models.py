@@ -16,3 +16,9 @@ class Post(models.Model):
     content = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
+
+    # returns only two first lines of comment text
+    def get_content_preview(self):
+        words = self.content.split()  
+        first_20_words = words[:20]  
+        return ' '.join(first_20_words)
