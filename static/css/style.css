@@ -25,6 +25,31 @@ body {
 
 /* Main -------------------------------------------------------------------> */
 
+.post-link {
+    text-decoration: none;
+}
+
+.container-p-detail {
+    background-color: white !important;
+    border-radius: 20px;
+}
+
+/* Pagination -------------------------------------------------------------> */
+
+.pagination>li>a {
+    background-color: white;
+    color: #3a3b3c;
+}
+
+.page-link {
+    color: #3a3b3c !important;
+}
+
+.page-item.active .page-link {
+    background-color: #3a3b3c !important;
+    color: white !important;
+    border-color: #3a3b3c !important;
+}
 
 /* Footer -----------------------------------------------------------------> */
 
