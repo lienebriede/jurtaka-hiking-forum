@@ -29,7 +29,8 @@ body {
     text-decoration: none;
 }
 
-.container-p-detail {
+.container-p-detail,
+.container-login {
     background-color: white !important;
     border-radius: 20px;
 }

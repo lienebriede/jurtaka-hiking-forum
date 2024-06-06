@@ -27,7 +27,7 @@
     <!-- Nav bar -->
     <nav class="navbar navbar-expand-lg fixed-top p-2 px-lg-5" data-bs-theme="dark">
         <div class="container-fluid">
-            <a href="{% url 'home' %}"><img src="../static/images/jurtaka_logo.png" height="70" width="auto"
+            <a href="{% url 'home' %}"><img src="{% static '/images/jurtaka_logo.png' %}" height="70" width="auto"
                     class="logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,7 +38,6 @@
                     <!-- Login/logout button -->
                     {% if user.is_authenticated %}
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Nav item</a>
                         <a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page"
                             href="{% url 'account_logout' %}">Logout</a>
                     </li>
