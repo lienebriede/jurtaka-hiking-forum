@@ -12,8 +12,7 @@ body {
     background: url("../images/background_wave.png");
     background-size: cover;
     background-repeat: repeat;
-    font-family: "Lato",
-        sans-serif;
+    font-family: "Lato", sans-serif;
     color: #3a3b3c;
 }
 
@@ -21,6 +20,10 @@ body {
 
 .navbar {
     background-color: #374955;
+}
+
+.nav-link {
+    color: white;
 }
 
 /* Main -------------------------------------------------------------------> */
@@ -33,6 +36,31 @@ body {
 .container-login {
     background-color: white !important;
     border-radius: 20px;
+}
+
+.btn-primary {
+    background-color: #de245c !important;
+    border-color: #de245c;
+}
+
+.btn-primary:hover {
+    background-color: #bc093f !important;
+    border-color: #bc093f;
+}
+
+/* Login, logout, signup ---------------------------------------------------> */
+
+.signup-link {
+    color: #de245c;
+    text-decoration: none;
+}
+
+.signup-link:hover {
+    text-decoration: underline;
+}
+
+.pink-text {
+    color: #de245c;
 }
 
 /* Pagination -------------------------------------------------------------> */
