@@ -16,9 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from forum.views import jurtaka_forum
+from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('forum/', jurtaka_forum, name='jurtaka_forum',)
+    path('', include ('forum.urls')),
 ]
